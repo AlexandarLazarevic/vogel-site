@@ -40,3 +40,6 @@ class HomePageTests(unittest.TestCase):
     def test_uber_uns_paragraph_content_text_check(self):
         self.assertEqual(self.uber_uns_page.uber_uns_paragraph_content_text_check(), datas.uber_uns_paragraph)
 
+
+if __name__ == "__main__":
+    unittest.main()

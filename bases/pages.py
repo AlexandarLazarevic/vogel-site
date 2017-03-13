@@ -14,6 +14,9 @@ class CommonForPages(BasePage):
     def title(self):
         return self.driver.title
 
+    def go_back_one_page(self):
+        return self.driver.back()
+
     def logo_is_displayed(self):
         logo = WebDriverWait(self.driver, 10).until(CommonLocators.LOGO)
         return logo.is_displayed()
@@ -214,7 +217,197 @@ class HomePage(BasePage):
         return zert.is_displayed()
 
     #TODO: napraviti module za svaki link sa home strane
+    #NEWS link check everything on that page
 
+    def click_news_read_more_link(self):
+        c = WebDriverWait(self.driver, 10).until(HomePageLocators.NEWS_READ_MORE)
+        c.click()
+
+    def first_picture_news_link_is_dispayed(self):
+        d = WebDriverWait(self.driver, 10).until(HomePageLocators.NEWS_LINK_FIRST_PICTURE)
+        return d.is_displayed()
+
+    def first_picture_news_link_check_src_atribute(self):
+        img = WebDriverWait(self.driver, 10).until(HomePageLocators.NEWS_LINK_FIRST_PICTURE)
+        return img.get_attribute("src")
+
+    def first_text_content_news_link_is_displayed(self):
+        d = WebDriverWait(self.driver, 10).until(HomePageLocators.NEWS_LINK_FIRST_TEXT_CONTENT)
+        return d.is_displayed()
+
+    def first_text_content_news_link_check(self):
+        c = WebDriverWait(self.driver, 10).until(HomePageLocators.NEWS_LINK_FIRST_TEXT_CONTENT)
+        return c.text
+
+    def zertifikat_news_link_is_displayed(self):
+        d = WebDriverWait(self.driver, 10).until(HomePageLocators.NEWS_LINK_ZERTIFIKAT_PICTURE)
+        return d.is_displayed()
+
+    def zertifikat_news_link_check_src_atribute(self):
+        img = WebDriverWait(self.driver, 10).until(HomePageLocators.NEWS_LINK_ZERTIFIKAT_PICTURE)
+        return img.get_attribute("src")
+
+    def zertifikat_news_link_text_content_is_displayed(self):
+        d = WebDriverWait(self.driver, 10).until(HomePageLocators.NEWS_LINK_ZERTIFIKAT_TEXT_CONTENT)
+        return d.is_displayed()
+
+    def zertifikat_news_link_text_content_check(self):
+        c = WebDriverWait(self.driver, 10).until(HomePageLocators.NEWS_LINK_ZERTIFIKAT_TEXT_CONTENT)
+        return c.text
+
+    def third_picture_news_link_is_displayed(self):
+        d = WebDriverWait(self.driver, 10).until(HomePageLocators.NEWS_LINK_THIRD_PICTURE)
+        return d.is_displayed()
+
+    def third_picture_news_link_check_src_atribute(self):
+        img = WebDriverWait(self.driver, 10).until(HomePageLocators.NEWS_LINK_THIRD_PICTURE)
+        return img.get_attribute("src")
+
+    def third_text_content_news_link_is_displayed(self):
+        d = WebDriverWait(self.driver, 10).until(HomePageLocators.NEWS_LINK_THIRD_TEXT_CONTENT)
+        return d.is_displayed()
+
+    def third_text_content_news_link_check(self):
+        c = WebDriverWait(self.driver, 10).until(HomePageLocators.NEWS_LINK_THIRD_TEXT_CONTENT)
+        return c.text
+
+    def fourth_picture_news_link_is_displayed(self):
+        d = WebDriverWait(self.driver, 10).until(HomePageLocators.NEWS_LINK_FOURTH_PICTURE)
+        return d
+
+    def fourth_picture_news_link_check_src_atribute(self):
+        img = WebDriverWait(self.driver, 10).until(HomePageLocators.NEWS_LINK_FOURTH_PICTURE)
+        return img.get_attribute("src")
+
+    def fourth_text_content_news_link_is_displayed(self):
+        d = WebDriverWait(self.driver, 10).until(HomePageLocators.NEWS_LINK_FOURTH_TEXT_CONTENT)
+        return d.is_displayed()
+
+    def fourth_text_content_news_link_check(self):
+        c = WebDriverWait(self.driver, 10).until(HomePageLocators.NEWS_LINK_FOURTH_TEXT_CONTENT)
+        return c.text
+
+    # VERFAHREN link check everything on that page
+    def click_verfahren_read_more_link(self):
+        verf = WebDriverWait(self.driver, 10).until(HomePageLocators.VERFAHREN_READ_MORE)
+        verf.click()
+
+    def verfahren_link_first_text_content_is_displayed(self):
+        d = WebDriverWait(self.driver, 10).until(HomePageLocators.VERFAHREN_LINK_FIRST_TEXT_CONTENT)
+        return d.is_displayed()
+
+    def verfahren_link_first_text_content_check(self):
+        c = WebDriverWait(self.driver, 10).until(HomePageLocators.VERFAHREN_LINK_FIRST_TEXT_CONTENT)
+        return c.text
+
+    def verfahren_link_second_text_content_is_displayed(self):
+        d = WebDriverWait(self.driver, 10).until(HomePageLocators.VERFAHREN_LINK_SECOND_TEXT_CONTENT)
+        return d.is_displayed()
+
+    def verfahren_link_second_text_content_check(self):
+        c = WebDriverWait(self.driver, 10).until(HomePageLocators.VERFAHREN_LINK_SECOND_TEXT_CONTENT)
+        return c.text
+
+    def verfahren_link_third_text_content_is_displayed(self):
+        d = WebDriverWait(self.driver, 10).until(HomePageLocators.VERFAHREN_LINK_THIRD_TEXT_CONTENT)
+        return d.is_displayed()
+
+    def verfahren_link_third_text_content_check(self):
+        c = WebDriverWait(self.driver, 10).until(HomePageLocators.VERFAHREN_LINK_THIRD_TEXT_CONTENT)
+        return c.text
+
+    # LINKS link check everything on that page
+    def click_links_read_more_link(self):
+        c = WebDriverWait(self.driver, 10).until(HomePageLocators.LINKS_READ_MORE)
+        c.click()
+
+    def first_title_links_page_is_displayed(self):
+        d = WebDriverWait(self.driver, 10).until(HomePageLocators.LINKS_FIRST_TITLE)
+        return d.is_displayed()
+
+    def first_title_links_page_check(self):
+        c = WebDriverWait(self.driver, 10).until(HomePageLocators.LINKS_FIRST_TITLE)
+        return c.text
+
+    def first_title_link_1_on_links_page_is_displayed(self):
+        d = WebDriverWait(self.driver, 10).until(HomePageLocators.LINKS_FIRST_TITLE_LINK_1)
+        return d.is_displayed()
+
+    def first_title_link_1_on_links_page_check(self):
+        c = WebDriverWait(self.driver, 10).until(HomePageLocators.LINKS_FIRST_TITLE_LINK_1)
+        return c.text
+
+    def first_title_link_1_on_links_page_is_displayed(self):
+        d = WebDriverWait(self.driver, 10).until(HomePageLocators.LINKS_FIRST_TITLE_LINK_2)
+        return d.is_displayed()
+
+    def first_title_link_2_on_links_page_check(self):
+        c = WebDriverWait(self.driver, 10).until(HomePageLocators.LINKS_FIRST_TITLE_LINK_2)
+        return c.text
+
+    def second_title_on_links_page_is_displayed(self):
+        d = WebDriverWait(self.driver, 10).until(HomePageLocators.LINKS_SECOND_TITLE)
+        return d.is_displayed()
+
+    def second_title_on_links_page_check(self):
+        c = WebDriverWait(self.driver, 10).until(HomePageLocators.LINKS_SECOND_TITLE)
+        return c.text
+
+    def second_title_link_1_on_links_page_is_displayed(self):
+        d = WebDriverWait(self.driver, 10).until(HomePageLocators.LINKS_SECOND_TITLE_LINK_1)
+        return d.is_displayed()
+
+    def second_title_link_1_on_links_page_check(self):
+        c = WebDriverWait(self.driver, 10).until(HomePageLocators.LINKS_SECOND_TITLE_LINK_1)
+        return c.text
+
+    def third_title_on_links_page_is_displayed(self):
+        d = WebDriverWait(self.driver, 10).until(HomePageLocators.LINKS_THIRD_TITLE)
+        return d.is_displayed()
+
+    def third_title_on_links_page_check(self):
+        c = WebDriverWait(self.driver, 10).until(HomePageLocators.LINKS_THIRD_TITLE)
+        return c.text
+
+    def third_title_link_1_on_links_page_is_displayed(self):
+        d = WebDriverWait(self.driver, 10).until(HomePageLocators.LINKS_THIRD_TITLE_LINK_1)
+        return d.is_displayed()
+
+    def third_title_link_1_on_links_page_check(self):
+        c = WebDriverWait(self.driver, 10).until(HomePageLocators.LINKS_THIRD_TITLE_LINK_1)
+        return c.text
+
+    def fourth_title_on_links_page_is_displayed(self):
+        d = WebDriverWait(self.driver, 10).until(HomePageLocators.LINKS_FOURTH_TITLE)
+        return d.is_displayed()
+
+    def fourth_title_on_links_page_check(self):
+        c = WebDriverWait(self.driver, 10).until(HomePageLocators.LINKS_FOURTH_TITLE)
+        return c.text
+
+    def fourth_title_link_1_on_links_page_is_displayed(self):
+        d = WebDriverWait(self.driver, 10).until(HomePageLocators.LINKS_FOURTH_TITLE_LINK_1)
+        return d.is_displayed()
+
+    def fourth_title_link_1_on_links_page_check(self):
+        c = WebDriverWait(self.driver, 10).until(HomePageLocators.LINKS_FOURTH_TITLE_LINK_1)
+        return c.text
+
+    def fourth_title_link_2_on_links_page_is_displayed(self):
+        d = WebDriverWait(self.driver, 10).until(HomePageLocators.LINKS_FOURTH_TITLE_LINK_2)
+        return d.is_displayed()
+
+    def fourth_title_link_2_on_links_page_check(self):
+        c = WebDriverWait(self.driver, 10).until(HomePageLocators.LINKS_FOURTH_TITLE_LINK_2)
+        return c.text
+
+    def fourth_title_link_3_on_links_page_is_displayed(self):
+        d = WebDriverWait(self.driver, 10).until(HomePageLocators.LINKS_FOURTH_TITLE_LINK_3)
+        return d.is_displayed()
+
+    def fourth_title_link_3_on_links_page_check(self):
+        c = WebDriverWait(self.driver, 10).until(HomePageLocators.LINKS_FOURTH_TITLE_LINK_3)
+        return c.text
 
 
 
@@ -416,12 +609,10 @@ class DienstleistungenPage(BasePage):
 
     #TODO: odavde pocinje pojedinacno testiranje stane
 
+
     def click_first_title_click(self):
         c = WebDriverWait(self.driver, 10).until(DiensLocators.FIRST_TITLE_LINK_CLICK)
         c.click()
-
-    def go_back_one_page(self):
-        return self.driver.back()
 
     def first_product_text_title_link_is_displayed(self):
         t = WebDriverWait(self.driver, 10).until(DiensLocators.FIRST_PRODUCT_TEXT_TITLE_LINK)
@@ -435,7 +626,7 @@ class DienstleistungenPage(BasePage):
         i = WebDriverWait(self.driver, 10).until(DiensLocators.FIRST_PRODUCT_IMG_TAG)
         return i.is_displayed()
 
-    def first_product_img_tag_check_src_atribude(self):
+    def first_product_img_tag_check_src_atribute(self):
         image = WebDriverWait(self.driver, 10).until(DiensLocators.FIRST_PRODUCT_IMG_TAG)
         return image.get_attribute("src")
 
@@ -483,7 +674,7 @@ class DienstleistungenPage(BasePage):
         i = WebDriverWait(self.driver, 10).until(DiensLocators.FIRST_PRODUCT_BOX_1_PICTURE)
         return i.is_displayed()
 
-    def first_product_box_1_picture_check_src_atribude(self):
+    def first_product_box_1_picture_check_src_atribute(self):
         image = WebDriverWait(self.driver, 10).until(DiensLocators.FIRST_PRODUCT_BOX_1_PICTURE)
         return image.get_attribute("src")
 
@@ -491,14 +682,14 @@ class DienstleistungenPage(BasePage):
         i = WebDriverWait(self.driver, 10).until(DiensLocators.FIRST_PRODUCT_BOX_2_PICTURE)
         return i.is_displayed()
 
-    def first_product_box_2_picture_check_src_atribude(self):
+    def first_product_box_2_picture_check_src_atribute(self):
         image = WebDriverWait(self.driver, 10).until(DiensLocators.FIRST_PRODUCT_BOX_2_PICTURE)
         return image.get_attribute("src")
     def first_product_box_3_picture_is_displayed(self):
         i = WebDriverWait(self.driver, 10).until(DiensLocators.FIRST_PRODUCT_BOX_3_PICTURE)
         return i.is_displayed()
 
-    def first_product_box_3_picture_check_src_atribude(self):
+    def first_product_box_3_picture_check_src_atribute(self):
         image = WebDriverWait(self.driver, 10).until(DiensLocators.FIRST_PRODUCT_BOX_3_PICTURE)
         return image.get_attribute("src")
 

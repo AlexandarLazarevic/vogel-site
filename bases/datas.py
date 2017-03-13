@@ -13,6 +13,53 @@ links_text = "Links zum Verband, zu Messen, unserer Fotografin oder zur Regionth
 a nozzle, so that a tube is formed (extrusion)."
 first_phone = "+41 (0) 61 761 40 80"
 second_phone = "+41 (0) 61 761 42 30"
+address = "Bird Packaging AG\nHauptstrasse 77\n4243 Dittingen"
+            # news link page
+news_link_first_content_text = "Im Mai 2016 erfolgt der Spatenstich für einen weiteren Erweitungsbau. \
+Die zusätzliche Fläche wird künftig als Lager genutzt werden."
+news_link_zertifikat_content_text = "Im April 2016 wurde unser Qualitäts-Management- \
+System ISO 9001 zertifiziert. Nun ist es amtlich."
+news_link_third_content_text = "Seit Dezember 2014 sind wir stolzer Besitzer einer Photovoltaik-Anlage. \
+Diese ist für den Eigenbedarf bestimmt, das heisst der produzierte Strom fliesst zu 100% in unsere Produktion."
+news_link_fourth_content_text = "Wir freuen uns auf Ihren Besuch an der Swiss Plastics in Luzern. Sie finden uns \
+in der Halle 2/ Stand D2115 (21.01-23.01.2014)"
+first_picture_news_link_src = "http://developer.digitalcube.rs:1122/images/news-img-2.png"
+zertifikat_news_link_src = "http://developer.digitalcube.rs:1122/images/certificate1.jpg"
+third_picture_news_link_src = "http://developer.digitalcube.rs:1122/images/solar-panels.jpg"
+fourth_picture_news_link_src = "http://developer.digitalcube.rs:1122/images/swiss-plastics.jpg"
+            # verfahren link page
+verfahren_link_first_text_content = "Extrusionsblasen ist ein Verfahren zur Herstellung von Hohlkörpern aus \
+thermoplastischen Kunststoffen. Dabei wir der aufgeschmolzene Kunststoff über eine Förderschnecke durch eine \
+Düse gepresst, so dass ein Schlauch entsteht (Extrusion). Dieser wird in eine Blasform übergeben und mittels Druckluft \
+den Innenkonturen der Form angepasst. Im Werkzeug geht der Kunststoff durch Abkühlung wieder in festen Zustand über und \
+wird nach dem Öffnen des Werkzeuges als Fertigteil entnommen. Bei der Vogel Verpackungen AG stellen wir Hohlkörper \
+mit einem Volumen von 5 ml bis 15 Liter her. Typisches Erkennungsmerkmal für extrusionsblasgeformte Verpackungen \
+ist eine Quetschnaht an der Unterseite."
+verfahren_link_second_text_content = "Spritzgiessen oder Spritzguss ist ein Verfahren zur Herstellung von \
+Kunststoffteilen ohne Hohlkörper. Dabei wird mit einer Spritzgiessmaschine der jeweilige Kunststoff verflüssigt \
+(plastifiziert) und unter hohem Druck in ein Spritzgiesswerkzeug eingespritzt. Im Werkzeug geht der Kunststoff durch \
+Abkühlung wieder in festen Zustand über und wird nach dem Öffnen des Werkzeuges als Fertigteil entnommen. Der Hohlraum \
+des Werkzeuges bestimmt dabei die Form und Oberflächenstruktur des fertigen Teiles."
+verfahren_link_third_text_content = "Siebdruck ist ein Druckverfahren, bei dem die Druckfarbe mit einer Gummirakel \
+durch ein feinmaschiges Gewebe hindurch auf das zu bedruckende Material gedruckt wird. An denjenigen Stellen des \
+Gewebes, wo dem Druckbild entsprechend keine Farbe gedruckt werden soll, werden die Maschenöffnungen des Gewebes \
+farbbundurchlässig gemacht."
+
+            # links link page
+first_title = "Verband/Ausbilldung"
+first_title_link_1 = "Kunststoff Verband Schweiz"
+first_title_link_2 = "KATZ - Kunststoff Ausbildungs - und Technologie Zentrum"
+second_title = "Messen"
+second_title_link_1 = "Schweizer Kunststofffachmesse Swiss Plastics"
+third_title = "Unsere Fotografin"
+third_title_link_1 = "Eli Vogel"
+fourth_title = "Region"
+fourth_title_link_1 = "www.flugtage.ch"
+fourth_title_link_2 = "www.dittingen.ch"
+fourth_title_link_3 = "www.laufental.ch"
+
+
+
 
 
 # dienstleistungen page datas

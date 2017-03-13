@@ -97,6 +97,59 @@ class HomePageLocators(object):
     ZERTIFIKAT = lambda driver: driver.find_element_by_css_selector\
         ("body > div.home-news-section > div > div.col-xs-12.col-sm-6.col-md-2 > a > img")
 
+    # news link lokators
+    NEWS_LINK_FIRST_PICTURE = lambda driver: driver.find_element_by_css_selector\
+        ("body > div.news-container > div > div > div:nth-child(1) > div > div > div:nth-child(1) > div > img")
+    NEWS_LINK_FIRST_TEXT_CONTENT = lambda driver: driver.find_element_by_css_selector\
+        ("body > div.news-container > div > div > div:nth-child(1) > div > div > div:nth-child(2) > div > div")
+    NEWS_LINK_ZERTIFIKAT_PICTURE = lambda driver: driver.find_element_by_css_selector\
+        ("body > div.news-container > div > div > div:nth-child(2) > div > div > div:nth-child(1) > div > img")
+    NEWS_LINK_ZERTIFIKAT_TEXT_CONTENT = lambda driver: driver.find_element_by_css_selector\
+        ("body > div.news-container > div > div > div:nth-child(2) > div > div > div:nth-child(2) > div > div")
+    NEWS_LINK_THIRD_PICTURE = lambda driver: driver.find_element_by_css_selector\
+        ("body > div.news-container > div > div > div:nth-child(3) > div > div > div:nth-child(1) > div > img")
+    NEWS_LINK_THIRD_TEXT_CONTENT = lambda driver: driver.find_element_by_css_selector\
+        ("body > div.news-container > div > div > div:nth-child(3) > div > div > div:nth-child(2) > div > div")
+    NEWS_LINK_FOURTH_PICTURE = lambda driver: driver.find_element_by_css_selector\
+        ("body > div.news-container > div > div > div:nth-child(4) > div > div > div:nth-child(1) > div > img")
+    NEWS_LINK_FOURTH_TEXT_CONTENT = lambda driver: driver.find_element_by_css_selector\
+        ("body > div.news-container > div > div > div:nth-child(4) > div > div > div:nth-child(2) > div > div")
+
+    #verfahren link locators
+    VERFAHREN_LINK_FIRST_TEXT_CONTENT = lambda driver: driver.find_element_by_css_selector\
+        ("body > div.links-container > div > div > div:nth-child(1) > div > div > div > div")
+    VERFAHREN_LINK_SECOND_TEXT_CONTENT = lambda driver: driver.find_element_by_css_selector\
+        ("body > div.links-container > div > div > div:nth-child(2) > div > div > div > div")
+    VERFAHREN_LINK_THIRD_TEXT_CONTENT = lambda driver: driver.find_element_by_css_selector\
+        ("body > div.links-container > div > div > div:nth-child(3) > div > div > div > div")
+
+    # links link locators
+    LINKS_FIRST_TITLE = lambda driver: driver.find_element_by_css_selector\
+        ("body > div.links-container > div > div > div:nth-child(1) > div > div > div > div > div")
+    LINKS_FIRST_TITLE_LINK_1 = lambda driver: driver.find_element_by_css_selector\
+        ("body > div.links-container > div > div > div:nth-child(1) > div > div > div > div > a:nth-child(2)")
+    LINKS_FIRST_TITLE_LINK_2 = lambda driver: driver.find_element_by_css_selector\
+        ("body > div.links-container > div > div > div:nth-child(1) > div > div > div > div > a:nth-child(4)")
+    LINKS_SECOND_TITLE = lambda driver: driver.find_element_by_css_selector\
+        ("body > div.links-container > div > div > div:nth-child(2) > div > div > div > div > div")
+    LINKS_SECOND_TITLE_LINK_1 = lambda driver: driver.find_element_by_css_selector\
+        ("body > div.links-container > div > div > div:nth-child(2) > div > div > div > div > a")
+    LINKS_THIRD_TITLE = lambda driver: driver.find_element_by_css_selector\
+        ("body > div.links-container > div > div > div:nth-child(3) > div > div > div > div > div")
+    LINKS_THIRD_TITLE_LINK_1 = lambda driver: driver.find_element_by_css_selector\
+        ("body > div.links-container > div > div > div:nth-child(3) > div > div > div > div > a")
+    LINKS_FOURTH_TITLE = lambda driver: driver.find_element_by_css_selector\
+        ("body > div.links-container > div > div > div:nth-child(4) > div > div > div > div > div")
+    LINKS_FOURTH_TITLE_LINK_1 = lambda driver: driver.find_element_by_css_selector\
+        ("body > div.links-container > div > div > div:nth-child(4) > div > div > div > div > a:nth-child(2)")
+    LINKS_FOURTH_TITLE_LINK_2 = lambda driver: driver.find_element_by_css_selector\
+        ("body > div.links-container > div > div > div:nth-child(4) > div > div > div > div > a:nth-child(4)")
+    LINKS_FOURTH_TITLE_LINK_3 = lambda driver: driver.find_element_by_css_selector \
+        ("body > div.links-container > div > div > div:nth-child(4) > div > div > div > div > a:nth-child(6)")
+
+
+
+
 
 
 class DiensLocators(object):
