@@ -4,7 +4,7 @@ from bases.pages import UberUnsPage, CommonForPages
 from bases import datas
 
 
-class HomePageTests(unittest.TestCase):
+class UberUnsPageTests(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
