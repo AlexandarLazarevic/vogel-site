@@ -119,3 +119,28 @@ Möglichkeiten und unser Know how."
 uber_uns_picture_src = "http://vogelverpackungen.ch/fileadmin/_processed_/csm_20130606-_ELI9574_9d7aeb8dbd.jpg"
 
 
+# Geschichite page
+year_1956_text = "Nach abgeschlossener Lehre wechselt Gerhard Vogel zu einem Blechverarbeitungsbetrieb wo er dann \
+mitverantwortlich ist für den Aufbau einer Kunststoff-Extusionsblasabteilung."
+year_1977_text = "Nach 20 Jahren Erfahrung im Kunststoff  macht sich Gerhard Vogel als Einzelfirma in Grellingen unter\
+   „Gerhard Vogel Verpackungen + technische Teile aus Kunststoff“ selbständig. Seine Strategie - Kleinmengen sowie das\
+    Bedrucken im Siebdruckverfahren auf Glas und Kunststoff"
+year_1979_text = "Mit dem Kauf einer Spritzgussmaschine können neu auch Spritzgussteile oder Verschlüsse produziert, \
+resp. angeboten werden."
+year_1980_text = "Zusammen mit seiner zukünftigen Frau, Rösli Hügli wird eine Aktiengesellschaft gegründet. Die Vogel \
+Verpackungen AG ist geboren."
+year_1981_text = "Bezug der neuen Produktionshalle in 4243 Dittingen. Damals noch auf der grünen Wiese. Zu dieser \
+Zeit noch visionär – Rückgewinnung der Prozesswärme zum Heizen der Einlegerwohnung resp. des Produktionsgebäudes."
+year_1992_text = "Erster Erweitungsbau Lager 1"
+year_1997_text = "Zweiter Erweiterungsbau Lager 2"
+year_2007_text = "Zusammenarbeitsvertrag mit der Firma Novoplast AG in Wallbach, inklusive der Übernahme Ihrer \
+Extrusionsblasmaschinen und Blasformen."
+year_2010_text = "Einstellung des Siebdrucks auf Glas"
+year_2013_text = "Ausarbeitung einer Nachfolgeregelung zwischen Rösli + Gerhard Vogel und Kurt Vogel jun. sowie Marcel \
+Wiss über die schrittweise Übernahme der Aktien."
+year_2014_text = "Inbetriebnahme unserer eigenen Photovoltaik-Anlage"
+year_2015_text = "Kauf einer neuen Blasmaschine"
+year_2016_text_1 = "Erfolgreiche ISO 9001 Zertifizierung"
+year_2016_text_2 = "Dritter Erweiterungsbau Lager 3"
+
+

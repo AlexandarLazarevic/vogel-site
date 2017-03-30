@@ -2,7 +2,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.keys import Keys
-from bases.locators import HomePageLocators, CommonLocators, DiensLocators, UberUnsLocators
+from bases.locators import HomePageLocators, CommonLocators, DiensLocators, UberUnsLocators,GeschichiteLocators
 
 class BasePage(object):
 
@@ -722,21 +722,228 @@ class UberUnsPage(BasePage):
         return c.text
 
 
+class Geschichite(BasePage):
 
+    def geschichite_year_1956_is_displayed(self):
+        d = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_1956)
+        return d.is_displayed()
 
+    def geschichite_year_1956_check_year_number(self):
+        c = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_1956)
+        return c.text
 
+    def geschichite_year_1956_text_is_displayed(self):
+        d = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_1956_TEXT)
+        return d.is_displayed()
 
+    def geschichite_year_1956_text_check(self):
+        c = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_1956_TEXT)
+        return c.text
 
+    def geschichite_year_1977_is_displayed(self):
+        d = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_1977)
+        return d.is_displayed()
 
+    def geschichite_year_1977_check_year_number(self):
+        c = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_1977)
+        return c.text
 
+    def geschichite_year_1977_text_is_displayed(self):
+        d = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_1977_TEXT)
+        return d.is_displayed()
 
+    def geschichite_year_1977_text_check(self):
+        c = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_1977_TEXT)
+        return c.text
 
+    def geschichite_year_1979_is_displayed(self):
+        d = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_1979)
+        return d.is_displayed()
 
+    def geschichite_year_1979_check_year_number(self):
+        c = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_1979)
+        return c.text
 
+    def geschichite_year_1979_text_is_displayed(self):
+        d = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_1979_TEXT)
+        return d.is_displayed()
 
+    def geschichite_year_1979_text_check(self):
+        c = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_1979_TEXT)
+        return c.text
 
+    def geschichite_year_1980_is_displayed(self):
+        d = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_1980)
+        return d.is_displayed()
 
+    def geschichite_year_1980_check_year_number(self):
+        c = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_1980)
+        return c.text
 
+    def geschichite_year_1980_text_is_displayed(self):
+        d = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_1980_TEXT)
+        return d.is_displayed()
 
+    def geschichite_year_1980_text_check(self):
+        c = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_1980_TEXT)
+        return c.text
 
+    def geschichite_year_1981_is_displayed(self):
+        d = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_1981)
+        return d.is_displayed()
 
+    def geschichite_year_1981_check_year_number(self):
+        c = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_1981)
+        return c.text
+
+    def geschichite_year_1981_text_is_displayed(self):
+        d = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_1981_TEXT)
+        return d.is_displayed()
+
+    def geschichite_year_1981_text_check(self):
+        c = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_1981_TEXT)
+        return c.text
+
+    def geschichite_year_1992_is_displayed(self):
+        d = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_1992)
+        return d.is_displayed()
+
+    def geschichite_year_1992_check_year_number(self):
+        c = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_1992)
+        return c.text
+
+    def geschichite_year_1992_text_is_displayed(self):
+        d = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_1992_TEXT)
+        return d.is_displayed()
+
+    def geschichite_year_1992_text_check(self):
+        c = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_1992_TEXT)
+        return c.text
+
+    def geschichite_year_1997_is_displayed(self):
+        d = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_1997)
+        return d.is_displayed()
+
+    def geschichite_year_1997_check_year_number(self):
+        c = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_1997)
+        return c.text
+
+    def geschichite_year_1997_text_is_displayed(self):
+        d = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_1997_TEXT)
+        return d.is_displayed()
+
+    def geschichite_year_1997_text_check(self):
+        c = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_1997_TEXT)
+        return c.text
+
+    def geschichite_year_2007_is_displayed(self):
+        d = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_2007)
+        return d.is_displayed()
+
+    def geschichite_year_2007_check_year_number(self):
+        c = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_2007)
+        return c.text
+
+    def geschichite_year_2007_text_is_displayed(self):
+        d = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_2007_TEXT)
+        return d.is_displayed()
+
+    def geschichite_year_2007_text_check(self):
+        c = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_2007_TEXT)
+        return c.text
+
+    def geschichite_year_2010_is_displayed(self):
+        d = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_2010)
+        return d.is_displayed()
+
+    def geschichite_year_2010_check_year_number(self):
+        c = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_2010)
+        return c.text
+
+    def geschichite_year_2010_text_is_displayed(self):
+        d = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_2010_TEXT)
+        return d.is_displayed()
+
+    def geschichite_year_2010_text_check(self):
+        c = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_2010_TEXT)
+        return c.text
+
+    def geschichite_year_2013_is_displayed(self):
+        d = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_2013)
+        return d.is_displayed()
+
+    def geschichite_year_2013_check_year_number(self):
+        c = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_2013)
+        return c.text
+
+    def geschichite_year_2013_text_is_displayed(self):
+        d = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_2013_TEXT)
+        return d.is_displayed()
+
+    def geschichite_year_2013_text_check(self):
+        c = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_2013_TEXT)
+        return c.text
+
+    def geschichite_year_2014_is_displayed(self):
+        d = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_2014)
+        return d.is_displayed()
+
+    def geschichite_year_2014_check_year_number(self):
+        c = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_2014)
+        return c.text
+
+    def geschichite_year_2014_text_is_displayed(self):
+        d = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_2014_TEXT)
+        return d.is_displayed()
+
+    def geschichite_year_2014_text_check(self):
+        c = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_2014_TEXT)
+        return c.text
+
+    def geschichite_year_2015_is_displayed(self):
+        d = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_2015)
+        return d.is_displayed()
+
+    def geschichite_year_2015_check_year_number(self):
+        c = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_2015)
+        return c.text
+
+    def geschichite_year_2015_text_is_displayed(self):
+        d = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_2015_TEXT)
+        return d.is_displayed()
+
+    def geschichite_year_2015_text_check(self):
+        c = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_2015_TEXT)
+        return c.text
+
+    def geschichite_year_2016_1_is_displayed(self):
+        d = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_2016_1)
+        return d.is_displayed()
+
+    def geschichite_year_2016_1_check_year_number(self):
+        c = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_2016_1)
+        return c.text
+
+    def geschichite_year_2016_text_1_is_displayed(self):
+        d = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_2016_TEXT_1)
+        return d.is_displayed()
+
+    def geschichite_year_2016_text_1_check(self):
+        c = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_2016_TEXT_1)
+        return c.text
+
+    def geschichite_year_2016_2_is_displayed(self):
+        d = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_2016_2)
+        return d.is_displayed()
+
+    def geschichite_year_2016_2_check_year_number(self):
+        c = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_2016_2)
+        return c.text
+
+    def geschichite_year_2016_text_2_is_displayed(self):
+        d = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_2016_TEXT_2)
+        return d.is_displayed()
+
+    def geschichite_year_2016_text_2_check(self):
+        c = WebDriverWait(self.driver, 10).until(GeschichiteLocators.YEAR_2016_TEXT_2)
+        return c.text

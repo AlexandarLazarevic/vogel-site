@@ -242,23 +242,61 @@ class UberUnsLocators(object):
         ("body > div.about-container > div > div > div > div > div > div:nth-child(2) > div > p")
 
 
+class GeschichiteLocators(object):
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    YEAR_1956 = lambda driver: driver.find_element_by_css_selector\
+        ("body > div.story-container > div > div > div:nth-child(1) > div > div > div.col-xs-12.col-md-1.col-lg-1 > div")
+    YEAR_1956_TEXT = lambda driver: driver.find_element_by_css_selector\
+        ("body > div.story-container > div > div > div:nth-child(1) > div > div > div.col-xs-12.col-md-11 > div")
+    YEAR_1977 = lambda driver: driver.find_element_by_css_selector\
+        ("body > div.story-container > div > div > div:nth-child(2) > div > div > div.col-xs-12.col-md-1.col-lg-1 > div")
+    YEAR_1977_TEXT = lambda driver: driver.find_element_by_css_selector\
+        ("body > div.story-container > div > div > div:nth-child(2) > div > div > div.col-xs-12.col-md-11 > div")
+    YEAR_1979 = lambda driver: driver.find_element_by_css_selector\
+        ("body > div.story-container > div > div > div:nth-child(3) > div > div > div.col-xs-12.col-md-1.col-lg-1 > div")
+    YEAR_1979_TEXT = lambda driver: driver.find_element_by_css_selector\
+        ("body > div.story-container > div > div > div:nth-child(3) > div > div > div.col-xs-12.col-md-11 > div")
+    YEAR_1980 = lambda driver: driver.find_element_by_css_selector\
+        ("body > div.story-container > div > div > div:nth-child(4) > div > div > div.col-xs-12.col-md-1.col-lg-1 > div")
+    YEAR_1980_TEXT = lambda driver: driver.find_element_by_css_selector\
+        ("body > div.story-container > div > div > div:nth-child(4) > div > div > div.col-xs-12.col-md-11 > div")
+    YEAR_1981 = lambda driver: driver.find_element_by_css_selector\
+        ("body > div.story-container > div > div > div:nth-child(5) > div > div > div.col-xs-12.col-md-1.col-lg-1 > div")
+    YEAR_1981_TEXT = lambda driver: driver.find_element_by_css_selector \
+        ("body > div.story-container > div > div > div:nth-child(5) > div > div > div.col-xs-12.col-md-11 > div")
+    YEAR_1992 = lambda driver: driver.find_element_by_css_selector \
+        ("body > div.story-container > div > div > div:nth-child(6) > div > div > div.col-xs-12.col-md-1.col-lg-1 > div")
+    YEAR_1992_TEXT = lambda driver: driver.find_element_by_css_selector \
+        ("body > div.story-container > div > div > div:nth-child(6) > div > div > div.col-xs-12.col-md-11 > div")
+    YEAR_1997 = lambda driver: driver.find_element_by_css_selector \
+        ("body > div.story-container > div > div > div:nth-child(7) > div > div > div.col-xs-12.col-md-1.col-lg-1 > div")
+    YEAR_1997_TEXT = lambda driver: driver.find_element_by_css_selector \
+        ("body > div.story-container > div > div > div:nth-child(7) > div > div > div.col-xs-12.col-md-11 > div")
+    YEAR_2007 = lambda driver: driver.find_element_by_css_selector \
+        ("body > div.story-container > div > div > div:nth-child(8) > div > div > div.col-xs-12.col-md-1.col-lg-1 > div")
+    YEAR_2007_TEXT = lambda driver: driver.find_element_by_css_selector \
+        ("body > div.story-container > div > div > div:nth-child(8) > div > div > div.col-xs-12.col-md-11 > div")
+    YEAR_2010 = lambda driver: driver.find_element_by_css_selector \
+        ("body > div.story-container > div > div > div:nth-child(9) > div > div > div.col-xs-12.col-md-1.col-lg-1 > div")
+    YEAR_2010_TEXT = lambda driver: driver.find_element_by_css_selector \
+        ("body > div.story-container > div > div > div:nth-child(9) > div > div > div.col-xs-12.col-md-11 > div")
+    YEAR_2013 = lambda driver: driver.find_element_by_css_selector \
+        ("body > div.story-container > div > div > div:nth-child(10) > div > div > div.col-xs-12.col-md-1.col-lg-1 > div")
+    YEAR_2013_TEXT = lambda driver: driver.find_element_by_css_selector \
+        ("body > div.story-container > div > div > div:nth-child(10) > div > div > div.col-xs-12.col-md-11 > div")
+    YEAR_2014 = lambda driver: driver.find_element_by_css_selector \
+        ("body > div.story-container > div > div > div:nth-child(11) > div > div > div.col-xs-12.col-md-1.col-lg-1 > div")
+    YEAR_2014_TEXT = lambda driver: driver.find_element_by_css_selector \
+        ("body > div.story-container > div > div > div:nth-child(11) > div > div > div.col-xs-12.col-md-11 > div")
+    YEAR_2015 = lambda driver: driver.find_element_by_css_selector \
+        ("body > div.story-container > div > div > div:nth-child(12) > div > div > div.col-xs-12.col-md-1.col-lg-1 > div")
+    YEAR_2015_TEXT = lambda driver: driver.find_element_by_css_selector \
+        ("body > div.story-container > div > div > div:nth-child(12) > div > div > div.col-xs-12.col-md-11 > div")
+    YEAR_2016_1 = lambda driver: driver.find_element_by_css_selector \
+        ("body > div.story-container > div > div > div:nth-child(13) > div > div > div.col-xs-12.col-md-1.col-lg-1 > div")
+    YEAR_2016_TEXT_1 = lambda driver: driver.find_element_by_css_selector \
+        ("body > div.story-container > div > div > div:nth-child(13) > div > div > div.col-xs-12.col-md-11 > div")
+    YEAR_2016_2 = lambda driver: driver.find_element_by_css_selector \
+        ("body > div.story-container > div > div > div:nth-child(13) > div > div > div.col-xs-12.col-md-1.col-lg-1 > div")
+    YEAR_2016_TEXT_2 = lambda driver: driver.find_element_by_css_selector \
+        ("body > div.story-container > div > div > div:nth-child(13) > div > div > div.col-xs-12.col-md-11 > div")
